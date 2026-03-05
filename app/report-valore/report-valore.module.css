@@ -1,0 +1,309 @@
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.titolo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 0.25rem 0;
+}
+
+.sottotitolo {
+  color: #666;
+  margin: 0;
+}
+
+.loading {
+  padding: 3rem;
+  text-align: center;
+  color: #888;
+}
+
+/* KPI */
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.kpiCard {
+  background: white;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.kpiAllerta {
+  border-left: 4px solid #f59e0b;
+}
+
+.kpiEmoji {
+  font-size: 1.5rem;
+}
+
+.kpiValore {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.kpiLabel {
+  font-size: 0.8rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Sezioni */
+.sezione {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  margin-bottom: 1.5rem;
+}
+
+.sezioneTitolo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 1.25rem 0;
+}
+
+/* Grafico categorie */
+.graficoCat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.rigaCategoria {
+  display: grid;
+  grid-template-columns: 200px 1fr 120px;
+  align-items: center;
+  gap: 1rem;
+}
+
+.catLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.catNome {
+  font-weight: 500;
+  color: #333;
+}
+
+.catNum {
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+.barraContainer {
+  height: 22px;
+  background: #f1f5f9;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.barra {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.4s ease;
+  min-width: 4px;
+}
+
+.catValore {
+  text-align: right;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #1a1a2e;
+}
+
+/* Filtri */
+.filtriRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.filtri {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background: white;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Tabella */
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.tabella {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.tabella thead tr {
+  background: #f8fafc;
+}
+
+.tabella th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tabella td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+}
+
+.tabella tbody tr:hover {
+  background: #f8fafc;
+}
+
+.esaurito {
+  background: #fff1f2 !important;
+}
+
+.critico {
+  background: #fffbeb !important;
+}
+
+/* Celle */
+.nomeProdotto {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.sku {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 0.15rem;
+}
+
+.badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  background: #fee2e2;
+  color: #dc2626;
+  text-transform: uppercase;
+}
+
+.badgeWarn {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  background: #fef3c7;
+  color: #d97706;
+  text-transform: uppercase;
+}
+
+.tagCategoria {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.centrato {
+  text-align: center;
+}
+
+.valoreCella {
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+/* Barra percentuale */
+.percWrapper {
+  position: relative;
+  height: 20px;
+  background: #f1f5f9;
+  border-radius: 4px;
+  overflow: hidden;
+  min-width: 80px;
+}
+
+.percBarra {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  opacity: 0.35;
+  border-radius: 4px;
+}
+
+.percTesto {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+/* Totale */
+.totaleRow td {
+  background: #f8fafc;
+  border-top: 2px solid #e2e8f0;
+  font-size: 0.95rem;
+  padding: 0.9rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .rigaCategoria {
+    grid-template-columns: 140px 1fr 90px;
+  }
+
+  .filtriRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
